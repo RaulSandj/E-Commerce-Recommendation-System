@@ -46,13 +46,13 @@ Here are some specific examples of how the cold start problem can be addressed:
 * Write a function to find similar users
   <ol>
     <li> 1. Find the similarity score of the desired user with each user in the interaction matrix using cosine_similarity and append to an empty list and sort it.</li>
-    <li> 2. Extract the similar user and similarity scores from the sorted list.</li>
-    <li> 3. Remove original user and its similarity score and return the rest.</li>
+    <li> 1. Extract the similar user and similarity scores from the sorted list.</li>
+    <li> 1. Remove original user and its similarity score and return the rest.</li>
   </ol>
 * Write a function to recommend users
   <ol>
     <li> 1. Call the previous similar users function to get the similar users for the desired user_id.</li>
-    <li> 2. Find prod_ids with which the original user has interacted -> observed_interactions.</li>
-    <li> 3. For each similar user Find 'n' products with which the similar user has interacted with but not the actual user.</li>
-    <li> 4. Return the specified number of products. 
+    <li> 1. Find prod_ids with which the original user has interacted -> observed_interactions.</li>
+    <li> 1. For each similar user Find 'n' products with which the similar user has interacted with but not the actual user.</li>
+    <li> 1. Return the specified number of products. 
   </ol>
