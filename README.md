@@ -33,3 +33,10 @@ Here are some specific examples of how the cold start problem can be addressed:
 - Calculate total number of ratings for each product.
 - Create a DataFrame using these values and sort it by average.
 - Write a function to get 'n' top products with specified minimum number of interactions.
+
+### **2. Similarity Based Collaborative Filtering**
+**Objective**
+* Provide personalized and relevant recommendations to users.
+
+**Outputs**
+* Recommend top 5 products based on interactions of similar users.
