@@ -58,3 +58,8 @@ Here are some specific examples of how the cold start problem can be addressed:
   </ol>
 
 ### **3. Model Based Collaborative Filtering**
+**Objective**
+* Provide personalized recommendations to users based on their past behavior and preferences, while also addressing the challenges of sparsity and scalability that can arise in other collaborative filtering techniques.
+
+**Outputs**
+* Recommend top 5 products for a particular user.
