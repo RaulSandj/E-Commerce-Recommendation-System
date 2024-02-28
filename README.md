@@ -56,3 +56,5 @@ Here are some specific examples of how the cold start problem can be addressed:
     <li> For each similar user Find 'n' products with which the similar user has interacted with but not the actual user.</li>
     <li> Return the specified number of products. 
   </ol>
+
+### **3. Model Based Collaborative Filtering**
