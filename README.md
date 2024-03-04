@@ -68,3 +68,11 @@ Here are some specific examples of how the cold start problem can be addressed:
 - Taking the matrix of product ratings and converting it to a CSR(compressed sparse row) matrix. This is done to save memory and computational time, since only the non-zero values need to be stored.
 - Performing singular value decomposition (SVD) on the sparse or csr matrix. SVD is a matrix decomposition technique that can be used to reduce the dimensionality of a matrix. In this case, the SVD is used to reduce the dimensionality of the matrix of product ratings to 50 latent features.
 - Calculating the predicted ratings for all users using SVD. The predicted ratings are calculated by multiplying the U matrix, the sigma matrix, and the Vt matrix.
+- Storing the predicted ratings in a DataFrame. The DataFrame has the same columns as the original matrix of product ratings. The rows of the DataFrame correspond to the users. The values in the DataFrame are the predicted ratings for each user.
+- A funtion is written to recommend products based on the rating predictions made:
+  <ol>
+    <li>It gets the user's ratings from the interactions_matrix.</li>
+    <li>It gets the user's predicted ratings from the preds_matrix.</li>
+    <li>It creates a DataFrame with the user's actual and predicted ratings.</li>
+    <li>It adds a column to the DataFrame with the product names.</li>
+  </ol>
