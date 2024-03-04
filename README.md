@@ -45,16 +45,16 @@ Here are some specific examples of how the cold start problem can be addressed:
 * user_id is of object, for our convenience we convert it to value of 0 to 1539(integer type).
 * Write a function to find similar users
   <ol>
-    <li> Find the similarity score of the desired user with each user in the interaction matrix using cosine_similarity and append to an empty list and sort it.</li>
-    <li> Extract the similar user and similarity scores from the sorted list.</li>
-    <li> Remove original user and its similarity score and return the rest.</li>
+    <li>Find the similarity score of the desired user with each user in the interaction matrix using cosine_similarity and append to an empty list and sort it.</li>
+    <li>Extract the similar user and similarity scores from the sorted list.</li>
+    <li>Remove original user and its similarity score and return the rest.</li>
   </ol>
 * Write a function to recommend users
   <ol>
-    <li> Call the previous similar users function to get the similar users for the desired user_id.</li>
-    <li> Find prod_ids with which the original user has interacted -> observed_interactions.</li>
-    <li> For each similar user Find 'n' products with which the similar user has interacted with but not the actual user.</li>
-    <li> Return the specified number of products. 
+    <li>Call the previous similar users function to get the similar users for the desired user_id.</li>
+    <li>Find prod_ids with which the original user has interacted -> observed_interactions.</li>
+    <li>For each similar user Find 'n' products with which the similar user has interacted with but not the actual user.</li>
+    <li>Return the specified number of products. 
   </ol>
 
 ### **3. Model Based Collaborative Filtering**
